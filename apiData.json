@@ -1,0 +1,70 @@
+// Sidebar
+{
+	"current_company": {
+		"id": "int",
+		"name": "str",
+		"logo": "url"
+	},
+	"available_companies": [
+		{
+			"id": "int",
+			"name": "str",
+			"logo": "url"
+		},
+		...
+	]
+}
+
+// состояние сервисов, GET
+{
+	"services": {
+		"crm": {
+			"id": "int",
+			"name": "str",
+			"acc_id": "str",
+			"license_expiry": "date",
+			"isActive": "bool"
+		},
+		"qoob": {
+			"id": "int",
+			"acc_id": "str",
+			"license_expiry": "date",
+			"isActive": "bool",
+			"qoob_app": {
+				"isExist": "bool",
+				"user_count": "int"
+			},
+			"whatsApp": {
+				"isAvailable": "bool",
+				// доступен ли whatsapp как канал для рассылки?
+				"isActive": "bool",
+				// активна рассылка через этот канал?
+				"acc_id": "str",
+				"expiry": "date"
+			},
+			"sms": {
+				"isAvailable": "bool",
+				// доступны ли SMS как канал для рассылки?
+				"isActive": "bool"
+				// активна рассылка через этот канал?
+			}
+		},
+	}
+}
+
+//Личный кабинет
+"owner": {
+	"phone": "str",
+	"email": "str",
+	"first_name": "str",
+	"last_name": "str",
+	"middle_name": "str",
+	"position": "str", // должность
+	"prefer_contact_method": "choice field" // предпочтительный способ связи
+}
+//подключить CRM, POST
+{
+  "crm_type": "str",
+  "crm_login": "str",
+  "crm_password": "str",
+}

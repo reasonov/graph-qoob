@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+img{
+    object-fit: cover
+}
+html{
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.fs-20{
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
+
+.fs-16{
+    line-height: 1.875rem;
+}
+.fs-14{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+.h1,.h2,.h3,.h4,.h5,.h6 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 42px;
+    color: #1E2022;
+    margin: 0;
+}
+h3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #000000;
+}
+h4 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    color: #1E2022;
+}
+body
+{
+    font-family: Graphik LCG;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently */
+}
+
+/* SCROLLBAR HIDDEN */
+::-webkit-scrollbar{
+    display: none;
+    width: 0;
+}
+.timer {
+    max-width: 212px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #6D6D6D;
+    margin-bottom: 0;
+}
+.timerValue {
+    border: 2px solid #F0F3F8;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 11px 60px;
+    width: 153px;
+}
+.timerWrap {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.main {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
+}
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+.inputWithBtn label{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #6D6D6D;
+  margin-bottom: 0.125rem;
+}
+.inputWithBtn input::placeholder,
+.inputWithBtn input::-webkit-input-placeholder {
+  color: #A1A2A2;
+}
+.inputWithBtn:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.inputWithBtn input{
+  flex-direction: row;
+  padding: 0.75rem 1.25rem;
+  background: #F6F9FC;
+  border-radius: 0.75rem 0 0 0.75rem;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #000000;
+}
+.inputWithBtn .inputBtn{
+  display: flex;
+  align-items: center;
+  background: #F6F9FC;
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: #6D6D6D;
+}
+.inputWithBtn .inputBtn > div{
+  background: #F6F9FC;
+  padding: 0 1.5rem;
+  border-left: solid 1px #e7e7e7;
+  color: #6D6D6D;
+}
+.inputWithBtn .inputBtn:hover {
+  cursor: pointer;
+}
+.col-4-custom {
+    width: 31%;
+}
+.paddingBottomDashboardContent > div{
+  padding-bottom: 9rem;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Black.eot');
+    src: local('~@/assets/fonts/Graphik LCG Black'), local('~@/assets/fonts/GraphikLCG-Black'),
+    url('~@/assets/fonts/GraphikLCG-Black.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Black.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Black.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Super.eot');
+    src: local('~@/assets/fonts/Graphik LCG Super'), local('~@/assets/fonts/GraphikLCG-Super'),
+    url('~@/assets/fonts/GraphikLCG-Super.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Super.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Super.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Super.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Thin.eot');
+    src: local('~@/assets/fonts/Graphik LCG Thin'), local('~@/assets/fonts/GraphikLCG-Thin'),
+    url('~@/assets/fonts/GraphikLCG-Thin.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Thin.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Thin.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Regular.eot');
+    src: local('~@/assets/fonts/Graphik LCG Regular'), local('~@/assets/fonts/GraphikLCG-Regular'),
+    url('~@/assets/fonts/GraphikLCG-Regular.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Regular.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Regular.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Medium.eot');
+    src: local('~@/assets/fonts/Graphik LCG Medium'), local('~@/assets/fonts/GraphikLCG-Medium'),
+    url('~@/assets/fonts/GraphikLCG-Medium.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Medium.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Medium.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Light.eot');
+    src: local('~@/assets/fonts/Graphik LCG Light'), local('~@/assets/fonts/GraphikLCG-Light'),
+    url('~@/assets/fonts/GraphikLCG-Light.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Light.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Light.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Semibold.eot');
+    src: local('~@/assets/fonts/Graphik LCG Semibold'), local('~@/assets/fonts/GraphikLCG-Semibold'),
+    url('~@/assets/fonts/GraphikLCG-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Semibold.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Semibold.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Bold.eot');
+    src: local('~@/assets/fonts/Graphik LCG Bold'), local('~@/assets/fonts/GraphikLCG-Bold'),
+    url('~@/assets/fonts/GraphikLCG-Bold.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Bold.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Bold.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('~@/assets/fonts/GraphikLCG-Extralight.eot');
+    src: local('~@/assets/fonts/Graphik LCG Extralight'), local('~@/assets/fonts/GraphikLCG-Extralight'),
+    url('~@/assets/fonts/GraphikLCG-Extralight.eot?#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/GraphikLCG-Extralight.woff2') format('woff2'),
+    url('~@/assets/fonts/GraphikLCG-Extralight.woff') format('woff'),
+    url('~@/assets/fonts/GraphikLCG-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+/* ------ Media Queries ------ */
+
+/* 1401-1600px */
+@media screen and (max-width: 1750px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* 1401-1600px */
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* 1201-1400px */
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 10px;
+    }
+    .startPageDescription {
+        padding: 12px 0!important;
+    }
+
+}
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 8px;
+    }
+    .start_page_navbar {
+        padding: 36px 64px 36px 64px!important;
+    }
+    h1 {
+        font-size: 30px!important;
+    }
+    .startPageDescription {
+        padding: 8px 0!important;
+        font-size: 16px!important;
+    }
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+    .startPageContent[data-v-f1961e72] {
+        max-width: 406px!important;
+        padding-bottom: 15%!important;
+    }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+
+}
+
